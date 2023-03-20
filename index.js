@@ -13,7 +13,7 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
   for (let book of books) {
     let bookTable = document.getElementById('books');
-    bookTable.innerHTML += `<tr><td>${book.title}</td><td>${book.author}</td><td>${book.isbn}</tr>`;
+    bookTable.innerHTML += `<tr><td>${book.title}</td><td>${book.author}</td><td>${book.isbn}</td><td>${book.description}</td></tr>`;
   }
    
  }
